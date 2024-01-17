@@ -1,12 +1,16 @@
 const bugNum = () =>{
-    const numero = '123'
+    try{
+        const numero = '123'
 
-    debugger
-
-    if(numero === 123){
-        return true
+        debugger
+    
+        if(numero === 123){
+            return true
+        }
+    } catch(error){
+        throw new Error
     }
-    return('erro')
+
 }
 
 debugger

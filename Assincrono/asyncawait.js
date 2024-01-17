@@ -13,11 +13,13 @@ const pedido = (pedido) => {
     })
 }
 
-solicitacao = 'sorvete'
-
-pedido(pedido)
-    .then((res) => {
-        console.log(res)
-    }).catch((erro) => {
+const reservarPedido = async () =>{
+    try{
+        console.log(await pedido('pizza'))
+    }catch( erro ){
         console.log(erro)
-    })
+    }
+}
+
+reservarPedido()
+console.log('roda o resto do codigo...')
